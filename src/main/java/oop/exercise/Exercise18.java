@@ -26,12 +26,11 @@ public class Exercise18
 
     }
     public static String temperature(String choice){
-        if(choice.equalsIgnoreCase("C"))
-            System.out.print("Please enter the temperature in Fahrenheit: ");
+        String temperature = choice.equalsIgnoreCase("C") ?
+                "Please enter the temperature in Fahrenheit: " :
+                "Please enter the temperature in Celsius: ";
 
-        if(choice.equalsIgnoreCase("f"))
-            System.out.print("Please enter the temperature in Celsius: ");
-
+        System.out.print(temperature);
         return input.nextLine();
 
     }
